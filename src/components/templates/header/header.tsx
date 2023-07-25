@@ -7,6 +7,7 @@ import { CtfNavigationGql } from '@src/components/features/ctf-components/ctf-na
 import { Link } from '@src/components/shared/link';
 import { HEADER_HEIGHT, HEADER_HEIGHT_MD, CONTAINER_WIDTH } from '@src/theme';
 import Image from 'next/image';
+import mypic from 'src/icons/bayada-logo.png';
 
 const useStyles = makeStyles((theme: Theme) => ({
   appbar: {
@@ -84,10 +85,10 @@ export const Header = (props: HeaderPropsInterface) => {
           maxWidth={false}
           style={{
             maxWidth: `${CONTAINER_WIDTH / 10}rem`,
-          }}>
+          }}
+        >
           <Link href="/" withoutMaterial title={t('common.homepage')}>
-            <Image
-            />
+            <Image src={mypic} objectFit="contain" />
           </Link>
           <Box display={{ xs: 'none', md: 'block' }}>
             <div className={classes.menuWrapper}>
@@ -103,7 +104,8 @@ export const Header = (props: HeaderPropsInterface) => {
             onClick={() => onMenuClick?.()}
             aria-controls="mobile-menu"
             aria-expanded={isMenuOpen}
-            aria-haspopup="dialog">
+            aria-haspopup="dialog"
+          >
             <Menu />
           </IconButton>
         </Box>
