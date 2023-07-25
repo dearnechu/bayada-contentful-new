@@ -15,7 +15,7 @@ interface ColorConfigInterface {
 
 const colorConfigs: { [key: string]: ColorConfigInterface } = {
   'palette-1. White (#FFFFFF)': {
-    headlineColor: '#1B273A',
+    headlineColor: '#d5242f',
     textColor: '#414D63',
     backgroundColor: '#fff',
     buttonColor: 'primary',
@@ -27,7 +27,7 @@ const colorConfigs: { [key: string]: ColorConfigInterface } = {
     buttonColor: 'secondary',
   },
   'palette-2. White Smoke (#FCFCFC)': {
-    headlineColor: '#1B273A',
+    headlineColor: '#d5242f',
     textColor: '#414D63',
     backgroundColor: '#fcfcfc',
     buttonColor: 'primary',
@@ -208,10 +208,10 @@ const colorfulTheme = createTheme({
           '#__next': {
             display: 'flex',
             flexDirection: 'column',
-          }
+          },
         },
-      }
-    }
+      },
+    },
   },
 });
 
