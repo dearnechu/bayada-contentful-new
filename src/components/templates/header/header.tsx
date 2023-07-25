@@ -5,7 +5,9 @@ import { useTranslation } from 'next-i18next';
 
 import { CtfNavigationGql } from '@src/components/features/ctf-components/ctf-navigation/ctf-navigation-gql';
 import { Link } from '@src/components/shared/link';
-// import Logo from '@src/icons/bayada-logo.svg';
+import { CtfImage } from '@src/components/features/ctf-components/ctf-image/ctf-image';
+
+// import Logo from '@src/icons/colorful-coin-logo.svg';
 import { HEADER_HEIGHT, HEADER_HEIGHT_MD, CONTAINER_WIDTH } from '@src/theme';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -86,7 +88,10 @@ export const Header = (props: HeaderPropsInterface) => {
             maxWidth: `${CONTAINER_WIDTH / 10}rem`,
           }}>
           <Link href="/" withoutMaterial title={t('common.homepage')}>
-            <img src="./src/icons/bayada-logo.png" />
+            <CtfImage
+              className={classes.corporateLogo}
+              src="src/icons/bayada-logo.png"
+            />
           </Link>
           <Box display={{ xs: 'none', md: 'block' }}>
             <div className={classes.menuWrapper}>
