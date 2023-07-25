@@ -7,7 +7,7 @@ import { CtfNavigationGql } from '@src/components/features/ctf-components/ctf-na
 import { Link } from '@src/components/shared/link';
 import Logo from '@src/icons/colorful-coin-logo.svg';
 import { HEADER_HEIGHT, HEADER_HEIGHT_MD, CONTAINER_WIDTH } from '@src/theme';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const useStyles = makeStyles((theme: Theme) => ({
   appbar: {
