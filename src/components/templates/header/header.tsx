@@ -89,7 +89,6 @@ export const Header = (props: HeaderPropsInterface) => {
           }}>
           <Link href="/" withoutMaterial title={t('common.homepage')}>
             <CtfImage
-              className={classes.corporateLogo}
               src="src/icons/bayada-logo.png"
             />
           </Link>
