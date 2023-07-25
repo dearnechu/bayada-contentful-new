@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next';
 
 import { CtfNavigationGql } from '@src/components/features/ctf-components/ctf-navigation/ctf-navigation-gql';
 import { Link } from '@src/components/shared/link';
-import Logo from '@src/icons/colorful-coin-logo.svg';
 import { HEADER_HEIGHT, HEADER_HEIGHT_MD, CONTAINER_WIDTH } from '@src/theme';
 import Image from 'next/image';
 
@@ -88,7 +87,7 @@ export const Header = (props: HeaderPropsInterface) => {
           }}>
           <Link href="/" withoutMaterial title={t('common.homepage')}>
             <Image
-              src="/src/icons/bayada-logo.png"
+              src="/"
               width={500}
               height={500}
               alt="Picture of the author"
