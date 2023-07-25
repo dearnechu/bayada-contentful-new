@@ -87,10 +87,6 @@ export const Header = (props: HeaderPropsInterface) => {
           }}>
           <Link href="/" withoutMaterial title={t('common.homepage')}>
             <Image
-              src="/"
-              width={500}
-              height={500}
-              alt="Picture of the author"
             />
           </Link>
           <Box display={{ xs: 'none', md: 'block' }}>
